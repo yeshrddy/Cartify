@@ -16,7 +16,7 @@ export default function ProductCard(props) {
   
   return (
       <div className="rounded-md border cursor-pointer" onClick={() => router.push(`/product/${props.data.id}`)}>
-        <Image
+        <img
           src={props?.data?.images[0]}
           alt="Laptop"
           className="aspect-[16/9] w-full rounded-md md:aspect-auto md:h-[300px] lg:h-[200px]"

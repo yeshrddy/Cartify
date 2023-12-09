@@ -24,7 +24,7 @@ export const ProductOverview = () => {
     <section className="overflow-hidden">
       <div className="mx-auto max-w-5xl px-5 py-24">
         <div className="mx-auto flex flex-wrap items-center lg:w-4/5">
-          <Image
+          <img
             alt={productInfo?.name}
             className="h-64 w-full rounded object-cover lg:h-96 lg:w-1/2"
             src={productInfo?.images[0]}
