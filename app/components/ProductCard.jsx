@@ -3,6 +3,7 @@ import React from 'react'
 import { useRouter } from 'next/navigation'
 import { useDispatch } from 'react-redux';
 import { addItem } from '@/store/cartSlice';
+import Image from 'next/image';
 
 export default function ProductCard(props) {
   console.log(props)
@@ -15,7 +16,7 @@ export default function ProductCard(props) {
   
   return (
       <div className="rounded-md border cursor-pointer" onClick={() => router.push(`/product/${props.data.id}`)}>
-        <img
+        <Image
           src={props.data.images[0]}
           alt="Laptop"
           className="aspect-[16/9] w-full rounded-md md:aspect-auto md:h-[300px] lg:h-[200px]"
